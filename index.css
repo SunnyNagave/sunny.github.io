@@ -1,0 +1,121 @@
+*{
+	color:#1d1dcb;
+	font-family:cursive;
+	transition: 0.2s ease-in-out;
+}
+
+h1{
+	text-align:center;
+}
+
+.cursorpointer{
+	cursor:pointer;
+}
+.mainsection{
+	border: 4px groove lightgrey;
+	margin: auto;
+	width: 70vw;
+	padding: 5px;
+}
+
+#inputsection{
+	display:flex;
+	justify-content:space-between;
+}
+
+#inputfield{
+	width:95%;
+	border:none;
+	outline:none;
+	border-bottom: 1px solid lightskyblue;
+	border-radius: 4px;
+}
+
+#utilities{
+	display:flex;
+	justify-content:space-between;
+	font-size: 0.6rem;
+    margin-top: 5px;
+	border-bottom: 3px double red;
+}
+
+#finallist{
+	list-style-type:none;
+	padding:0px 5px;
+}
+
+.listitem{
+	border-bottom: 1px solid lightskyblue;
+	padding: 2px;
+}
+
+#delbtn{
+	float:right;
+	color:transparent;
+}
+
+#delbtn:hover{
+	color:#1d1dcb;
+	cursor:pointer;
+}
+
+.strikethrough{
+	text-decoration: line-through;
+}
+
+.nostyle{
+	text-decoration: none;
+}
+
+.completedtask{
+	display:inline-block; 
+	text-decoration:line-through; 
+	color:grey; 
+	border-left: 3px double red;
+}
+
+.uncompletedtask{
+	display:inline-block; 
+	text-decoration:none; 
+	border-left: 3px double red;
+}
+
+#moreinfo{
+	border-top: 3px double red;
+	display:flex;
+	justify-content:space-between;
+	font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.increasefont:hover{
+	font-size:0.8rem;
+	color:grey;
+}
+
+.increasefontsize:hover{
+	font-size:1rem;
+	color:grey;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 0.8rem;
+    }
+
+    .utilities{
+        font-size: 0.5rem;
+    }
+
+    .increasefont:hover{
+        font-size:0.6rem;
+    }
+    
+    #moreinfo{
+        font-size: 0.6rem;
+    }
+
+    .increasefontsize:hover{
+        font-size:0.8rem;
+    }
+}

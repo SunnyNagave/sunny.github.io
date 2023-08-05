@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To Do List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome  -->
+	    <script  src="https://kit.fontawesome.com/b3348ae33f.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 id="pagetitle">To Do List</h1>
+		<div class="mainsection">
+			<div>
+				<form id="inputsection" onkeypress="return event.keyCode != 13">
+  					<input type="text" id="inputfield" placeholder="Type Here...">
+                    <i id="addbutton" class="fa-regular fa-square-plus cursorpointer"></i>
+					<!-- <span id="addbutton" class="cursorpointer">+</span> -->
+				</form>
+			</div>
+			<div id="utilities">
+				<span id="markall" class="cursorpointer increasefont"><i class="fa-solid fa-check-double"></i> Mark All as Completed</span>
+				<span id="clearcom" class="cursorpointer increasefont"><i class="fa-solid fa-trash-can"></i> Clear Completed </span>
+			</div>
+			<div id="listsection">
+				<ul id="finallist">
+                    <!-- *List Item When Task is Completed* 
+                        <input type="checkbox" id=${mainkey} class="checkb" checked> 
+                        <div class="completedtask">
+                            &nbsp;${listname[mainkey]} 
+                        </div> 
+                        <i id="delbtn" class="fa-solid fa-square-xmark ${mainkey}"></i>
+                    
+                        *List Item When Task is Uncompleted*
+                        <input type="checkbox" id=${mainkey} class="checkb"> 
+                        <div class="uncompletedtask">
+                            &nbsp;${listname[mainkey]} 
+                        </div> 
+                        <i id="delbtn" class="fa-solid fa-square-xmark ${mainkey}"></i> 
+                    -->
+				</ul>
+			</div>
+			<div id="moreinfo">
+				<span><span id="counter"> 0 </span> Tasks Pending !!!</span>
+				<span>
+					<span id="alltasks" class="cursorpointer increasefontsize">ALL |</span>
+					<span id="comtasks" class="cursorpointer increasefontsize"> Completed |</span>
+					<span id="unctasks" class="cursorpointer increasefontsize"> Uncompleted</span>
+				</span>
+			</div>
+		</div>
+        <script src="index.js"></script>
+    </body>
+</html>
